@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crew</title>
+</head>
+<body>
+    <h1>{{ lastname }} {{ firstname }}</h1>
+    <hr>
+    Flavor:
+    <ul>
+        {% for flavs in flav %}
+
+        <li><p>{{ flavs|title }}</p></li>
+
+        {% endfor %}
+    </ul>
+
+    {% comment %} 
+    This won’t be rendered, this is a multi-line comment 
+    {% endcomment %}
+</body>
+</html>
